@@ -1,0 +1,24 @@
+{
+  "name": "latex-workshop",
+  "version": "1.0.0",
+  "description": "A workshop on using LaTex and Tex for Document TypeSetting",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbelmont/latex-workshop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jbelmont/latex-workshop/issues"
+  },
+  "homepage": "https://github.com/jbelmont/latex-workshop#readme",
+  "devDependencies": {
+    "gitbook": "^2.6.9",
+    "gitbook-cli": "^2.3.2"
+  }
+}

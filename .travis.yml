@@ -1,0 +1,16 @@
+language: go
+go:
+- '1.10'
+before_install:
+  - "sudo apt-get update && sudo apt-get install --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra texlive-latex-recommended dvipng"
+script:
+  - mkdir _build
+  #- pdflatex -output-directory _build tex/your_file_1.tex
+  #- pdflatex -output-directory _build tex/your_file_2.tex
+deploy:
+  provider: releases
+  api_key:
+    secure: lUO0mz4j9/KFncYIumamKT2iakMFH93dGI6v0KMB4saiTJ5Oe8VRxiUVrgomlpezBNNzQy47U1Q8J5hijg816T0xsvK1Z8OefXhf1jyIVP3J0j/fKMGvLcHxm6akRc66KHGRp/g0p8jS83NDklerlMNNI/pAlHb9kXWihDeU+gU1KwTsMlt9jMThojNzN0ex4dFHTKhQcxo5qgnsapUV2LQdCRtrs9bdZVredW0j/P/L0aKYWsT4j5XEkJ1q1r4sjKT71OWGlbi/O0cKcjgNf4uHOb0N3V7LbZmDYvD5zSFunbTyj62qaavFthUwLRXNuisQg4B0mICJ0audHZVk4XIlIMeOyCNbLgI6wiYCMbpR510ab8IHgcz0U+xf3vQhvLXMT7Bf8zDjQoPnFVW3OVR/DaKCJIltZNSgLZr7WiLCEpKefUVlHslExS8WfFjo/ASdP6BguEDj/d08T4FzYYqzr/+2QSgR0TkKG9JzOStqcq2bkaLehl930MvgWk9uhpvpDGUcyrONVSqb5qVVh2d/7dD0k4klZjSWIjB2K9pJkFi3JLc+542r5+hCLfOJE6w5eusmAROIWZGmRWdb8nRXh/id2XAt/wWGXNhD15ups5A5aZnBjwXju62IBw/b7n6y0W7uhLMBZQQV2W5PlnHKd0GKrw6E9Wi+oRybkPM=
+  file: ''
+  on:
+    repo: jbelmont/latex-workshop
